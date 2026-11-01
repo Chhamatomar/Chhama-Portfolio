@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<section class="hero-section">
+
+    <!-- Left Side: Introduction -->
+    <div class="hero-content">
+
+        <span class="welcome-text">WELCOME TO MY PORTFOLIO</span>
+
+        <h1>Hi, I'm <span>Chhama Tomar</span></h1>
+
+        <h2>Python Developer</h2>
+
+        <p>
+            I build Python-based backend applications, REST APIs,
+            and data-driven solutions using FastAPI, Django,
+            and PostgreSQL. I'm also exploring AI/ML-powered
+            backend systems to build smarter applications.
+        </p>
+
+    </div>
+
+    <!-- Right Side: Your Picture -->
+    <div class="hero-image">
+        <img src="{% static 'images/myphoto.jpeg' %}" height="550" width="350" alt="Chhama Tomar">
+    </div>
+
+</section>
+
+<section class='hero'>
+</section>
+<span class="section-label">My Work</span>
+<section class='projects'>
+    <h2> Featured Projects </h2>
+    <div class='project-grid'>
+        <div class="project-card">
+    <img src="{% static 'images/project1.png' %}" width="400" height="300" alt="My Portfolio">
+
+    <h3>
+        <a href="YOUR_PORTFOLIO_GITHUB_LINK" target="_blank">
+            My Portfolio
+        </a>
+    </h3>
+
+    <p>
+        A personal portfolio website developed using HTML, CSS, Python,
+        and Django to showcase my technical skills and projects.
+    </p>
+</div>
+
+<div class="project-card">
+    <img src="{% static 'images/project2.png' %}" width="400" height="300"  alt="Content Moderation API">
+
+    <h3>
+        <a href="https://github.com/Chhamatomar/content_moderation_api" target="_blank">
+            Content Moderation API
+        </a>
+    </h3>
+
+    <p>
+        A backend API designed to analyze and classify user-generated
+        content to identify potentially inappropriate or harmful text.
+    </p>
+</div>
+
+<div class="project-card">
+    <img src="{% static 'images/project3.png' %}" width="400" height="300"  alt="Blog API">
+
+    <h3>
+        <a href="https://github.com/Chhamatomar/blog_api" target="_blank">
+            Blog API
+        </a>
+    </h3>
+
+    <p>
+        A RESTful API built using Python, FastAPI, and PostgreSQL,
+        featuring JWT authentication, CRUD operations, pagination,
+        and rate limiting.
+    </p>
+</div>
+
+<div class="project-card">
+    <img src="{% static 'images/project4.png' %}" width="400" height="300"  alt="Laptop Price Prediction">
+
+    <h3>
+        <a href="https://github.com/Chhamatomar/Laptop-Price-Prediction" target="_blank">
+            Laptop Price Prediction
+        </a>
+    </h3>
+
+    <p>
+        A machine learning application that predicts laptop prices
+        based on specifications using an optimized XGBoost model.
+    </p>
+</div>
+
+<div class="project-card">
+    <img src="{% static 'images/project5.png' %}" width="400" height="300"  alt="Customer Churn Analysis">
+
+    <h3>
+        <a href="https://github.com/Chhamatomar/customer-churn-analysis" target="_blank">
+            Customer Churn Analysis and Prediction
+        </a>
+    </h3>
+
+    <p>
+        An exploratory data analysis and machine learning project
+        focused on identifying customers likely to discontinue
+        their subscriptions.
+    </p>
+</div>
+
+<div class="project-card">
+    <img src="{% static 'images/project6.png' %}" width="400" height="300"  alt="Superstore Sales Analysis">
+
+    <h3>
+        <a href="https://github.com/Chhamatomar/superstore-sales-analysis" target="_blank">
+            Superstore Sales Analysis
+        </a>
+    </h3>
+
+    <p>
+        A data analysis project exploring sales, profit, product
+        performance, and regional trends to generate business insights.
+    </p>
+</div>
+    </div>
+</section>
+{% endblock %}
